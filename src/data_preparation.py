@@ -18,4 +18,4 @@ def clean_data(data):
     numeric_cols = cleaned_data.select_dtypes(
         include=['int64', 'float64']).columns
     cleaned_data[numeric_cols] = cleaned_data[numeric_cols].apply(zscore)
-    return data
+    return cleaned_data
